@@ -24,8 +24,8 @@ The data for this analysis was obtained from Kaggle, a platform that provides op
 
 
 ## Exploratory Data Analysis (EDA)
-Extensive Exploratory Data Analysis (EDA) was performed to understand the data distribution, detect outliers, and find correlations between features and the target variable.
-Key steps in EDA:
+Extensive Exploratory Data Analysis (EDA) was performed to understand the data distribution, detect outliers, and find correlations between features and the target variable. [EDA code](ABC_salesAnalysis.ipynb)
+#### Key steps in EDA:
 + Data cleaning (handling missing values, correcting data types).
 + Univariate and bivariate analysis of features.
 + Visualization of key insights using libraries like Matplotlib and Seaborn.
@@ -39,8 +39,8 @@ The project follows a typical machine learning pipeline, including:
 4.	**Model Evaluation:** Evaluated models based on RMSE (Root Mean Squared Error), R² score, and MAE (Mean Absolute Error).
 
 
-## Models Used
-Three models were implemented to predict the purchase amount:
+## Models
+Three models were implemented to predict the purchase amount. [Model code](model.ipynb)
 #### Linear Regression
 A simple regression model that assumes a linear relationship between input features and the target variable.
 + Key Characteristics: Easy to interpret but may underperform if the relationship between features and target is not linear.
