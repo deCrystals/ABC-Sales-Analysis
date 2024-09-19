@@ -40,7 +40,7 @@ The project follows a typical machine learning pipeline, including:
 
 
 ## Models
-Three models were implemented to predict the purchase amount. [Model code](model.ipynb)
+Five models were implemented to predict the purchase amount. [Model code](model.ipynb)
 #### Linear Regression
 A simple regression model that assumes a linear relationship between input features and the target variable.
 + Key Characteristics: Easy to interpret but may underperform if the relationship between features and target is not linear.
@@ -53,6 +53,13 @@ A decision tree is a non-linear model that splits data based on feature values t
 An ensemble learning method combines several decision tree predictions to improve accuracy and generalisation.
 + Key Characteristics: More robust and less prone to overfitting than a single decision tree.
 
+#### XGBOOST Regressor
+XGBoost(Extreme Gradient Boosting) uses level-wise tree growth. it uses pruning to control tree complexity, cutting off splits that do not improve loss function.
++ Key Characteristic: It is computational efficient and scalanle. It is more robust with smaller datasets and prevents overfitting
+
+#### LightGBM Regressor
+LightGBM(Light Gradient Boosting Machine) grows trees leaf by leaf. It reduces loss efficiently but prone to overfitting with smaller dataset. 
++ Key Characteristics: It is faster and requires less memory
 
 #### Results
 The performance of the models was evaluated using the following metrics:
@@ -61,10 +68,12 @@ The performance of the models was evaluated using the following metrics:
 + Mean Absolute Error (MAE)
 
 
-### Conclusion
-**Best Model:** The Random Forest Regressor outperformed the other models in terms of RMSE, R² score, and MAE, indicating better predictive accuracy and generalization.
 
-The Random Forest Regressor performed the best in predicting the purchase amount. The model captured the relationships between the input features and the target variable more effectively than Linear Regression and Decision Tree models.
+### Conclusion
+**Best Model:** XGBoost slightly outperforms all models in terms of R² and error metrics, making it the best model in this case for the sales analysis task.
+LightGBM offers a close alternative to XGBoost with similar performance.
+Random Forest is also competitive but performs a bit worse than the gradient boosting models.
+Linear Regression performs poorly, while Decision Tree performs moderately but lacks the generalization power of ensemble models.
 
 
 
