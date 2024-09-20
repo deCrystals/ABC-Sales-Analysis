@@ -1,5 +1,5 @@
 # Sales Analysis
-![Sales](./image/Dashboard.png)
+[![Sales](./image/Dashboard_1.png)](https://public.tableau.com/shared/XTGBS3BW3?:display_count=n&:origin=viz_share_link)
 
 ## Table of Contents
 * [Introduction](#Introduction)
@@ -14,8 +14,7 @@
 * [Concluison](#conclusion)
 
 ## Introduction
- This project is aimed at performing Monthly Sales Analysis for a company with stores in 3 cities. The dataset, sourced from Kaggle, contains various features related to customer purchases and other sales-related factors. The project's primary objective is to predict the purchase amount based on these features.
-
+ This project is aimed at Analysis for the BlackFriday Sales of a company in 3 cities and prediction of the Sales amount. The dataset, sourced from Kaggle, contains various features related to customer purchases and other sales-related factors. 
 ## Data Source
 The data for this analysis was obtained from Kaggle, a platform that provides open datasets. The dataset includes customer demographics, product categories, and purchase amounts.
 * Dataset Name: Kaggle Sales Data
@@ -24,7 +23,7 @@ The data for this analysis was obtained from Kaggle, a platform that provides op
 
 
 ## Exploratory Data Analysis (EDA)
-Extensive Exploratory Data Analysis (EDA) was performed to understand the data distribution, detect outliers, and find correlations between features and the target variable. [EDA code](ABC_salesAnalysis.ipynb)
+Extensive Exploratory Data Analysis (EDA) was performed to understand the data distribution, detect outliers, and find correlations between features and the target variable. [EDA code](ABC_salesAnalysis.ipynb)<p>[Dashboard](https://public.tableau.com/shared/XTGBS3BW3?:display_count=n&:origin=viz_share_link)</p>
 #### Key steps in EDA:
 + Data cleaning (handling missing values, correcting data types).
 + Univariate and bivariate analysis of features.
@@ -62,6 +61,7 @@ LightGBM(Light Gradient Boosting Machine) grows trees leaf by leaf. It reduces l
 + Key Characteristics: It is faster and requires less memory
 
 #### Results
+Sales Analysis Result
 The performance of the models was evaluated using the following metrics:
 + Root Mean Squared Error (RMSE)
 + R² score
